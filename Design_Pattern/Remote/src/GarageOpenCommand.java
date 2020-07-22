@@ -10,4 +10,9 @@ public class GarageOpenCommand implements Command {
     public void execute() {
         garage.open();
     }
+
+    @Override
+    public void undo() {
+
+    }
 }
