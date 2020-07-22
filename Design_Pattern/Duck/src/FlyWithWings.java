@@ -1,5 +1,3 @@
-package com.company;
-
 public class FlyWithWings implements FlyBehavior {
     @Override
     public void fly() {

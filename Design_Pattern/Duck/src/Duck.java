@@ -1,5 +1,3 @@
-package com.company;
-
 public abstract class Duck {
     FlyBehavior flyBehavior;
     QuackBehavior quackBehavior;
