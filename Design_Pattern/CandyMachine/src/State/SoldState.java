@@ -1,5 +1,9 @@
+package State;
+
+import Machine.CandyMachine;
+
 public class SoldState implements State {
-    CandyMachine candyMachine;
+    transient CandyMachine candyMachine;
 
     public SoldState(CandyMachine candyMachine) {
         this.candyMachine = candyMachine;

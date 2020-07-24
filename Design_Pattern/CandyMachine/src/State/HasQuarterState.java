@@ -1,7 +1,11 @@
+package State;
+
+import Machine.CandyMachine;
+
 import java.util.Random;
 
 public class HasQuarterState implements State {
-    CandyMachine candyMachine;
+    transient CandyMachine candyMachine;
     Random random = new Random(System.currentTimeMillis());
 
     public HasQuarterState(CandyMachine candyMachine) {

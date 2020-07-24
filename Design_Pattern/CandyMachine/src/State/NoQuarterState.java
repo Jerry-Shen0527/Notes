@@ -1,9 +1,14 @@
+package State;
+
+import Machine.CandyMachine;
+
 public class NoQuarterState implements State {
-    CandyMachine candyMachine;
+    transient CandyMachine candyMachine;
 
     public NoQuarterState(CandyMachine candyMachine) {
         this.candyMachine = candyMachine;
     }
+
 
     @Override
     public void insertQuarter() {

@@ -1,5 +1,9 @@
-public class WinnerState implements State{
-    CandyMachine candyMachine;
+package State;
+
+import Machine.CandyMachine;
+
+public class WinnerState implements State {
+    transient CandyMachine candyMachine;
 
     public WinnerState(CandyMachine candyMachine) {
         this.candyMachine = candyMachine;
@@ -24,10 +28,9 @@ public class WinnerState implements State{
     public void dispense() {
         System.out.println("You are a winner!");
         candyMachine.releaseCandy();
-        if (candyMachine.getCount()==0){
+        if (candyMachine.getCount() == 0) {
             candyMachine.setState(candyMachine.getSoldOutState());
-        }
-        else {
+        } else {
             candyMachine.releaseCandy();
             if (candyMachine.getCount() > 0) {
                 candyMachine.setState(candyMachine.getNoQuarterState());
