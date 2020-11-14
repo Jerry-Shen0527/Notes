@@ -1,5 +1,6 @@
 template<typename T>
 struct AccumulationTraits;
+//specializations
 template<>
 struct AccumulationTraits<char> {
 	using AccT = int;
